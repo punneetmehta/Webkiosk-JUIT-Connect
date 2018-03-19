@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+        <Preference
+            android:key="userEnrNo"
+            android:title="Enrollment Number"
+            android:selectable="false"
+            android:summary="" />
+        <Preference
+            android:key="userName"
+            android:title="Name"
+            android:selectable="false"
+            android:summary="" />
+        <Preference
+            android:key="userBatch"
+            android:title="Batch"
+            android:selectable="false"
+            android:summary="" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notifications">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="allowNotifications"
+            android:title="Receive Important Updates" />
+
+    </PreferenceCategory>
+    <!--
+    <PreferenceCategory android:title="Sync">
+        <SwitchPreference
+            android:summary="Once per Day"
+            android:defaultValue="true"
+            android:key="autoUpdateAttendance"
+            android:title="Auto Update Attendance" />
+    </PreferenceCategory>
+    -->
+
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:selectable="false"
+            android:summary="JUIT WebKiosk App :)" />
+
+        <Preference
+            android:key="appVersion"
+            android:summary="2.0"
+            android:title="Version" />
+
+        <Preference
+            android:key="feedback"
+            android:summary="Got any Queries/Suggestions?"
+            android:title="Send Feedback" />
+    </PreferenceCategory>
+</PreferenceScreen>

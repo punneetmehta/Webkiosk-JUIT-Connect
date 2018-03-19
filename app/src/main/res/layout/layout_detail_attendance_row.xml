@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/status"
+        android:layout_width = "30dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1"
+        android:gravity = "center"
+        android:padding = "5dp"
+        android:text = ""
+        android:textColor = "#000000" />
+
+    <TextView
+        android:id="@+id/faculty"
+        android:layout_toRightOf="@id/status"
+        android:layout_width = "150dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "2"
+        android:gravity = "center"
+        android:padding = "5dp"
+        android:text = "Faculty"
+        android:textColor = "#000000" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_toRightOf="@id/faculty"
+        android:layout_width = "100dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1.5"
+        android:gravity = "center"
+        android:padding = "5dp"
+        android:text = "Date"
+        android:textColor = "#000000" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_toRightOf="@id/date"
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1"
+        android:gravity = "center"
+        android:padding = "5dp"
+        android:text = "Time"
+        android:textColor = "#000000" />
+</RelativeLayout>

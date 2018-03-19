@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+    defaultConfig {
+        applicationId "juit.webkiosk"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 5
+        versionName "3.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [onesignal_app_id: "e1c386d9-6f6d-4cce-bb57-5bec0f345ca6", onesignal_google_project_number: "REMOTE"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile 'com.droidmentor:helper:1.0.1'
+    compile 'com.github.deano2390:MaterialShowcaseView:1.2.0@aar'
+    compile 'com.onesignal:OneSignal:[3.6.2, 3.99.99]'
+    compile 'com.thefinestartist:finestwebview:1.2.7'
+    compile 'com.android.support:recyclerview-v7:27.0.2'
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.android.support:support-v4:27.0.2'
+    compile 'com.karumi:dexter:4.2.0'
+    testCompile 'junit:junit:4.12'
+}
+repositories {
+    mavenCentral()
+}

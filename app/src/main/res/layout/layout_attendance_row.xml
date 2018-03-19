@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/subjectName"
+        android:textColor="#222222"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:text="Subject Name"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginRight="40dp"
+        android:id="@+id/subjectCode"
+        android:text="Subject Code"
+        android:textSize="14dp"
+        android:layout_below="@id/subjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:progressTint="@color/colorPrimaryDark"
+        android:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/subjectCode"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:progress="0"
+        />
+
+    <TextView
+        android:layout_marginRight="5dp"
+        android:id="@+id/attDetail"
+        android:layout_alignParentRight="true"
+        android:text="Lecture : NA  |   Tutorial : NA  |   Total : NA"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="30dp"
+        android:background="#fff"
+        android:src="@drawable/info"/>
+
+</RelativeLayout>
