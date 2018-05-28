@@ -34,7 +34,7 @@ class JUITKioskAPI<T>(internal var mContext: Activity, internal var responseMode
     internal var SEM_LIST = "JUITKiosk_ExamInfo_GetSemesters"
     internal var EXAM_GRADES = "JUITKiosk_ExamInfo_GetGradesBySem"
 
-    internal var JUITKiosk_API_KEY = "API_KEY"; // For Geting API Key, drop me a Mail at i@puneet.cc
+    internal var JUITKiosk_API_KEY = "API_KEY"; // For Geting API Key, drop me a Mail at juit@puneet.cc
 
     init {
         ApiClient.setBaseUrl(APIBase)
